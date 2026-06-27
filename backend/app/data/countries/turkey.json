@@ -1,5 +1,10 @@
 {
   "country": "turkey",
+  "name": "Турция",
+  "name_en": "Turkey",
+  "currency": "TRY",
+  "currency_label": "турецкая лира",
+  "news_query": "Турция",
   "emergency_number": "112",
   "regions": [
     {

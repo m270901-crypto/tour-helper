@@ -77,3 +77,20 @@ class RegionSummary(BaseModel):
     id: str
     name: str
     name_en: str
+
+
+class CountrySummary(BaseModel):
+    id: str
+    name: str
+    name_en: str
+    currency: str
+    currency_label: str
+
+
+class NewsArticle(BaseModel):
+    title: str
+    description: Optional[str] = None
+    url: str
+    source_name: Optional[str] = None
+    published_at: Optional[str] = None
+    image: Optional[str] = None

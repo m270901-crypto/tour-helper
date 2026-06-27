@@ -1,26 +1,30 @@
 import { useEffect, useState } from "react";
 import { fetchRegions } from "../api/client";
 
-export default function RegionSelector({ selectedId, onSelect }) {
+export default function RegionSelector({ countryId, selectedId, onSelect }) {
   const [regions, setRegions] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchRegions()
+    if (!countryId) return;
+    setRegions([]);
+    fetchRegions(countryId)
       .then(setRegions)
       .catch((err) => setError(err.message));
-  }, []);
+  }, [countryId]);
 
+  if (!countryId) return null;
   if (error) return <p className="error">{error}</p>;
 
   return (
-    <div className="region-selector">
+    <div className="tile-grid">
       {regions.map((region) => (
         <button
           key={region.id}
-          className={region.id === selectedId ? "region-btn active" : "region-btn"}
+          className={region.id === selectedId ? "tile active" : "tile"}
           onClick={() => onSelect(region.id)}
         >
+          <span className="tile-icon">📍</span>
           {region.name}
         </button>
       ))}

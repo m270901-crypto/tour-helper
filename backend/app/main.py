@@ -5,7 +5,7 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import flight, regions
+from app.routers import flight, news, regions
 
 app = FastAPI(title="Tour Helper API")
 
@@ -18,6 +18,7 @@ app.add_middleware(
 
 app.include_router(flight.router)
 app.include_router(regions.router)
+app.include_router(news.router)
 
 
 @app.get("/api/health")

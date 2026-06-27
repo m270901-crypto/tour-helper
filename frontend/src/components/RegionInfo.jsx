@@ -1,27 +1,29 @@
 import { useEffect, useState } from "react";
 import { fetchRegionDetail } from "../api/client";
 import AddressLink from "./AddressLink";
+import NearbyMapSearch from "./NearbyMapSearch";
 
 const TABS = [
-  { id: "emergency", label: "Контакты" },
-  { id: "shopping", label: "Шопинг" },
-  { id: "attractions", label: "Места" },
-  { id: "transport", label: "Транспорт" },
+  { id: "emergency", label: "Контакты", icon: "🚨" },
+  { id: "pharmacy", label: "Аптеки", icon: "💊" },
+  { id: "shopping", label: "Шопинг", icon: "🛍️" },
+  { id: "attractions", label: "Места", icon: "📸" },
+  { id: "transport", label: "Транспорт", icon: "🚌" },
 ];
 
-export default function RegionInfo({ regionId }) {
+export default function RegionInfo({ countryId, regionId }) {
   const [region, setRegion] = useState(null);
   const [error, setError] = useState(null);
   const [tab, setTab] = useState("emergency");
 
   useEffect(() => {
-    if (!regionId) return;
+    if (!countryId || !regionId) return;
     setRegion(null);
     setError(null);
-    fetchRegionDetail(regionId)
+    fetchRegionDetail(countryId, regionId)
       .then(setRegion)
       .catch((err) => setError(err.message));
-  }, [regionId]);
+  }, [countryId, regionId]);
 
   if (!regionId) return null;
   if (error) return <p className="error">{error}</p>;
@@ -37,6 +39,7 @@ export default function RegionInfo({ regionId }) {
             className={tab === t.id ? "tab active" : "tab"}
             onClick={() => setTab(t.id)}
           >
+            <span className="tab-icon">{t.icon}</span>
             {t.label}
           </button>
         ))}
@@ -72,12 +75,14 @@ export default function RegionInfo({ regionId }) {
             ))}
           </div>
 
-          {region.pharmacy_note && (
-            <div className="sub-block">
-              <h4>Аптеки</h4>
-              <p className="note">{region.pharmacy_note}</p>
-            </div>
-          )}
+        </div>
+      )}
+
+      {tab === "pharmacy" && (
+        <div className="tab-content">
+          {region.pharmacy_note && <p className="note">{region.pharmacy_note}</p>}
+          <p><strong>Найти аптеку рядом:</strong></p>
+          <NearbyMapSearch query="аптека" />
         </div>
       )}
 

@@ -1,12 +1,18 @@
-import { mapsUrl } from "../utils/maps";
+import { mapsUrlForAddress } from "../utils/maps";
 
 export default function AddressLink({ address, name }) {
   if (!address) return null;
   return (
-    <p>
-      <a href={mapsUrl(address, name)} target="_blank" rel="noopener noreferrer" className="address-link">
-        📍 {address}
+    <div className="address-block">
+      <p className="address-text">📍 {address}</p>
+      <a
+        href={mapsUrlForAddress(address, name)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="map-btn"
+      >
+        Открыть на карте
       </a>
-    </p>
+    </div>
   );
 }

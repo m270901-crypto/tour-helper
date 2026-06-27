@@ -13,10 +13,20 @@ export function fetchFlight(flightNumber) {
   return request(`/api/flight/${encodeURIComponent(flightNumber)}`);
 }
 
-export function fetchRegions() {
-  return request("/api/regions");
+export function fetchCountries() {
+  return request("/api/countries");
 }
 
-export function fetchRegionDetail(regionId) {
-  return request(`/api/regions/${encodeURIComponent(regionId)}`);
+export function fetchRegions(countryId) {
+  return request(`/api/countries/${encodeURIComponent(countryId)}/regions`);
+}
+
+export function fetchRegionDetail(countryId, regionId) {
+  return request(
+    `/api/countries/${encodeURIComponent(countryId)}/regions/${encodeURIComponent(regionId)}`
+  );
+}
+
+export function fetchNews(countryId) {
+  return request(`/api/news/${encodeURIComponent(countryId)}`);
 }

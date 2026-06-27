@@ -1,0 +1,151 @@
+{
+  "country": "uae",
+  "name": "ОАЭ",
+  "name_en": "UAE",
+  "currency": "AED",
+  "currency_label": "дирхам ОАЭ",
+  "news_query": "ОАЭ",
+  "emergency_number": "999",
+  "regions": [
+    {
+      "id": "dubai",
+      "name": "Дубай",
+      "name_en": "Dubai",
+      "emergency": {
+        "police_general": "800-4438 (Tourist Security, бесплатно)",
+        "police_short": "999",
+        "police_note": "Полиция Дубая имеет отдельную туристическую службу безопасности (Tourist Security) с горячей линией 800-4438. Скорая — 998, пожарная — 997",
+        "consulate": {
+          "name": "Генеральное консульство РФ в Дубае",
+          "address": "Umm Al Sheif, 6B Street, Villa 21, Jumeirah, Dubai",
+          "phone": "+971 4 328 5347",
+          "hours": null
+        }
+      },
+      "hospitals": [
+        {"name": "Rashid Hospital", "type": "государственная, травмацентр 24/7, JCI-аккредитация", "address": "315 Umm Hurair 2, Dubai Healthcare City, Dubai", "phone": "+971 4 219 8888"},
+        {"name": "Mediclinic City Hospital", "type": "частная", "address": "Building 37, Dubai Healthcare City, Dubai", "phone": "800 1999"}
+      ],
+      "pharmacy_note": "Аптеки в ОАЭ — обычные розничные сети без дежурного графика как в Турции. Крупные сети: Aster Pharmacy, Life Pharmacy, Boots — многие работают допоздна, в торговых центрах и у метро",
+      "malls": [
+        {"name": "The Dubai Mall", "address": "Financial Centre Road, рядом с Burj Khalifa, Downtown Dubai"},
+        {"name": "Mall of the Emirates", "address": "Sheikh Zayed Road, Interchange 4, Al Barsha 1, Dubai"},
+        {"name": "Ibn Battuta Mall", "address": "Sheikh Zayed Road (E11), Jebel Ali, Dubai"}
+      ],
+      "attractions": [
+        {"name": "Burj Khalifa", "description": "Самое высокое здание в мире, смотровые площадки"},
+        {"name": "Дубайский фонтан", "description": "Шоу фонтанов у озера Burj Khalifa, Downtown"},
+        {"name": "Палм Джумейра", "description": "Искусственный остров в форме пальмы"},
+        {"name": "Dubai Frame", "description": "Рамка-обзорная площадка в Zabeel Park"},
+        {"name": "Burj Al Arab", "description": "Культовый отель-парус, вид с пляжа Джумейра"},
+        {"name": "Dubai Marina / JBR Walk", "description": "Набережная, небоскрёбы, променад"}
+      ],
+      "transport": {
+        "public": "Метро, автобусы и трамвай Дубая (RTA) — единая система с оплатой картой Nol",
+        "card": "Nol Card — пополняемая карта на метро/автобус/трамвай, частично на такси и парковку",
+        "apps": ["S'hail (RTA, маршруты и бронирование)", "RTA Dubai (пополнение Nol, штрафы, парковка)"],
+        "taxi_apps": ["Careem", "Uber", "Hala (RTA-такси через Careem)"]
+      }
+    },
+    {
+      "id": "abu_dhabi",
+      "name": "Абу-Даби",
+      "name_en": "Abu Dhabi",
+      "emergency": {
+        "police_general": "800 2626 (требует проверки)",
+        "police_short": "999",
+        "police_note": "Отдельной туристической полиции, как в Дубае, не подтверждено — используйте единый номер 999",
+        "consulate": {
+          "name": "Посольство РФ в ОАЭ",
+          "address": "Khalifa Street, East Plots 65/67, Abu Dhabi",
+          "phone": "+971 50 463 5480",
+          "hours": null
+        }
+      },
+      "hospitals": [
+        {"name": "Sheikh Khalifa Medical City (SKMC)", "type": "государственная, под управлением Cleveland Clinic", "address": "Al Karamah Street, Al Karamah, Abu Dhabi", "phone": "+971 2 819 0000"},
+        {"name": "Cleveland Clinic Abu Dhabi", "type": "частная, международный стандарт", "address": "Al Maryah Island, Abu Dhabi", "phone": "800 8 2223"}
+      ],
+      "pharmacy_note": "Сети Aster Pharmacy и Life Pharmacy представлены по всему городу — ищите ближайший филиал в картах",
+      "malls": [
+        {"name": "Yas Mall", "address": "Yas Island, Abu Dhabi (рядом с Ferrari World)"},
+        {"name": "Abu Dhabi Mall", "address": "Tourist Club Area, Abu Dhabi"}
+      ],
+      "attractions": [
+        {"name": "Мечеть шейха Зайда", "description": "Главная мечеть ОАЭ, Sheikh Rashid Bin Saeed St"},
+        {"name": "Louvre Abu Dhabi", "description": "Музей на острове Saadiyat"},
+        {"name": "Qasr Al Watan", "description": "Президентский дворец, Al Ras Al Akhdar"},
+        {"name": "Yas Island", "description": "Ferrari World, Yas Waterworld, Warner Bros World"},
+        {"name": "Корниш Абу-Даби", "description": "Набережная вдоль залива"}
+      ],
+      "transport": {
+        "public": "Метро отсутствует — только автобусы (Abu Dhabi Mobility, бывш. DMT). Инфолиния: 800 850",
+        "card": null,
+        "apps": ["Darbi (поиск автобусов/такси/парковки, управление толлингом Darb)"],
+        "taxi_apps": ["Careem", "Uber"]
+      }
+    },
+    {
+      "id": "sharjah",
+      "name": "Шарджа",
+      "name_en": "Sharjah",
+      "emergency": {
+        "police_general": "999",
+        "police_short": "999",
+        "police_note": "Отдельной туристической полиции, как в Дубае, не подтверждено",
+        "consulate": null
+      },
+      "hospitals": [
+        {"name": "University Hospital Sharjah (UHS)", "type": "многопрофильная", "address": "University City, University Street, Sharjah", "phone": "+971 6 505 8555"}
+      ],
+      "pharmacy_note": "Сети Aster Pharmacy и Life Pharmacy есть в районах Abu Shagara и Al Nasserya — ищите ближайший филиал в картах",
+      "malls": [
+        {"name": "City Centre Sharjah", "address": "Al Wahda Street, Sharjah"},
+        {"name": "Sahara Centre", "address": "Al Nahda Street, Al Nahda 1, Sharjah"}
+      ],
+      "attractions": [
+        {"name": "Мечеть Аль-Нур", "description": "На набережной Corniche, рядом остров-бабочковый сад Al Noor Island"},
+        {"name": "Heart of Sharjah", "description": "Историческая часть города, музеи, сук"},
+        {"name": "Al Qasba", "description": "Канал и набережная с колесом обозрения Eye of the Emirates"},
+        {"name": "Al Majaz Waterfront", "description": "Набережная рядом с Al Qasba, место Sharjah Light Festival"}
+      ],
+      "transport": {
+        "public": "Метро отсутствует — автобусная сеть Mowasalat (SRTA), оплата картой Sayer",
+        "card": "Sayer/Mowasalat — собственная карта Шарджи, отдельная от дубайского Nol",
+        "apps": ["RTA Sharjah (официальное приложение SRTA)"],
+        "taxi_apps": ["Careem", "Uber"]
+      }
+    },
+    {
+      "id": "ras_al_khaimah",
+      "name": "Рас-эль-Хайма",
+      "name_en": "Ras Al Khaimah",
+      "emergency": {
+        "police_general": "999",
+        "police_short": "999",
+        "police_note": null,
+        "consulate": null
+      },
+      "hospitals": [
+        {"name": "Saqr Hospital", "type": "государственная", "address": "Al Juwais, Ras Al Khaimah", "phone": "+971 7 204 9999"},
+        {"name": "RAK Hospital", "type": "частная, аптека на территории работает 24/7", "address": "Al Qusaidat, Ras Al Khaimah", "phone": "+971 7 207 4444"}
+      ],
+      "pharmacy_note": "Аптеки сосредоточены в районе Manar Mall — Al Manar Pharmacy и Life Pharmacy",
+      "malls": [
+        {"name": "Manar Mall", "address": "Al Muntasir Road, Ras Al Khaimah"}
+      ],
+      "attractions": [
+        {"name": "Джебель-Джейс", "description": "Самая высокая точка ОАЭ, самый длинный зиплайн в мире (Jebel Jais Flight)"},
+        {"name": "Al Jazirah Al Hamra", "description": "Заброшенный город времён добычи жемчуга, крупнейший такой в Заливе"},
+        {"name": "Al Marjan Island", "description": "Искусственный остров с пляжными резортами"},
+        {"name": "Корниш и форт Аль-Хисн", "description": "Старая часть города RAK"}
+      ],
+      "transport": {
+        "public": "Метро отсутствует — городские автобусы RAKTA, стоимость поездки ~5-10 AED",
+        "card": null,
+        "apps": ["Sayr (RAKTA — автобусы, такси, паромы, оплата онлайн)"],
+        "taxi_apps": ["Careem", "Hala Ride"]
+      }
+    }
+  ]
+}
