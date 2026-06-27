@@ -1,0 +1,157 @@
+{
+  "country": "turkey",
+  "emergency_number": "112",
+  "regions": [
+    {
+      "id": "antalya",
+      "name": "Анталья",
+      "name_en": "Antalya",
+      "emergency": {
+        "police_general": "+90 242 241 62 31",
+        "police_short": "155",
+        "police_note": "Туристическая полиция активна в Калеичи (старый город) и на Ларе в сезон (май-октябрь)",
+        "consulate": {
+          "name": "Генеральное консульство РФ в Анталье",
+          "address": "Park Sok. No:30, 07100 Yenikapı, Antalya",
+          "phone": "+90 242 248 32 02",
+          "hours": "Пн-Пт 09:00-13:00, 14:00-18:00"
+        }
+      },
+      "hospitals": [
+        {"name": "Akdeniz University Hospital", "type": "государственная, реанимация 24/7", "address": "Pınarbaşı Mah., Dumlupınar Blv., Konyaaltı, 07070 Antalya", "phone": "+90 242 249 69 69"},
+        {"name": "Memorial Antalya Hospital", "type": "частная, отделение для иностранных пациентов", "address": "Zafer Mah., Yıldırım Beyazıt Cad. No:91, Kepez, 07000 Antalya", "phone": "+90 242 314 66 66"}
+      ],
+      "pharmacy_note": "В Турции дежурные аптеки (nöbetçi eczane) меняются ежедневно по районам. Актуальную дежурную аптеку смотрите на eczaneler.gen.tr или happ.health/duty-pharmacy/en/antalya",
+      "malls": [
+        {"name": "MarkAntalya", "address": "Fener, Tekelioğlu Cd. No:55, 07160 Muratpaşa/Antalya"},
+        {"name": "TerraCity", "address": "Fener Mah., Tekelioğlu Cad., Lara, Muratpaşa/Antalya"},
+        {"name": "Deepo Outlet Center", "address": "Altınova Sinan, Serik Caddesi 309, Kepez/Antalya"}
+      ],
+      "attractions": [
+        {"name": "Калеичи (старый город)", "description": "Историческая часть города, гавань, османские дома"},
+        {"name": "Ворота Адриана", "description": "Триумфальная римская арка, 130 г. н.э."},
+        {"name": "Водопады Дюден", "description": "Нижний и верхний водопады, парковая зона"},
+        {"name": "Анталийский аквариум", "description": "Один из самых длинных подводных тоннелей в мире"},
+        {"name": "Пляж Коньяалты", "description": "Главный городской пляж"}
+      ],
+      "transport": {
+        "public": "Трамвай AntRay (легкое метро) и историческая Nostalji Tramvayı вдоль набережной; более 100 автобусных маршрутов от Antalya Ulaşım",
+        "card": "AntalyaKart — пополняемая карта для автобусов и трамвая",
+        "apps": ["Antalya Card (отслеживание автобусов)", "Moovit (построение маршрутов)"],
+        "taxi_apps": ["BiTaksi", "Uber", "Martı"]
+      }
+    },
+    {
+      "id": "kemer",
+      "name": "Кемер",
+      "name_en": "Kemer",
+      "emergency": {
+        "police_general": "+90 242 814 15 03",
+        "police_short": "112",
+        "police_note": "Отдельного подразделения туристической полиции не подтверждено — звоните в местную полицию и просите англоговорящего сотрудника",
+        "consulate": {
+          "name": "Ближайшее — Генеральное консульство РФ в Анталье",
+          "address": "Park Sok. No:30, 07100 Yenikapı, Antalya (~42 км от Кемера)",
+          "phone": "+90 242 248 32 02"
+        }
+      },
+      "hospitals": [
+        {"name": "Özel Anatolia Hospital Kemer", "type": "частная, прием иностранных пациентов", "address": "Yeni Mahallesi, Atatürk ve Demokrasi Bulvarı No:71, 07980 Kemer, Antalya", "phone": "уточняйте на anatoliahospital.com"}
+      ],
+      "pharmacy_note": "Дежурные аптеки меняются ежедневно — проверяйте на happ.health/duty-pharmacy или по указателям в городе",
+      "malls": [
+        {"name": "Рынок Кемер Чарши", "address": "Центр Кемера — основная торговая улица/базар"},
+        {"name": "Antalya Migros AVM (ближайший крупный ТЦ)", "address": "Konyaaltı, Antalya"}
+      ],
+      "attractions": [
+        {"name": "Олимпос", "description": "Древний ликийский город и пляж"},
+        {"name": "Фазелис", "description": "Руины древнего порта, три бухты"},
+        {"name": "Канатная дорога Тахталы", "description": "Подъём с уровня моря на высоту 2365 м"},
+        {"name": "Мунлайт Парк (Moonlight Beach)", "description": "Пляж и парк с дельфинарием и мини-зоопарком"},
+        {"name": "Йорюк Парк", "description": "Музей кочевой культуры под открытым небом"}
+      ],
+      "transport": {
+        "public": "Долмуши (маршрутные минивэны) — основной транспорт. Автостанция Кемера — хаб для долмушей до Олимпоса, Фазелиса, Текировы, Антальи",
+        "card": null,
+        "apps": ["Moovit (построение маршрутов)"],
+        "taxi_apps": ["BiTaksi", "Martı", "Uber (ограниченное покрытие)"]
+      }
+    },
+    {
+      "id": "side",
+      "name": "Сиде",
+      "name_en": "Side",
+      "emergency": {
+        "police_general": "+90 242 753 10 98",
+        "police_short": "112",
+        "police_note": "Жандармерия Сиде: Side Mah., Atatürk Bulvarı No:43, 07330 Manavgat/Antalya. По серьёзным вопросам — районное управление полиции Манавгата",
+        "consulate": {
+          "name": "Ближайшее — Генеральное консульство РФ в Анталье",
+          "address": "~65-75 км от Сиде",
+          "phone": "+90 242 248 32 02"
+        }
+      },
+      "hospitals": [
+        {"name": "Side Anadolu Hastanesi", "type": "частная", "address": "Side Mahallesi, 07330 Manavgat, Antalya", "phone": "+90 242 744 02 02"},
+        {"name": "Manavgat Devlet Hastanesi", "type": "государственная", "address": "Центр Манавгата (уточните точный адрес перед поездкой)", "phone": "уточняйте локально"}
+      ],
+      "pharmacy_note": "Проверяйте дежурную аптеку на happ.health/duty-pharmacy/en/antalya/manavgat",
+      "malls": [
+        {"name": "Торговая аллея Land of Legends", "address": "Курортный комплекс Land of Legends, Кумкёй, рядом с Сиде"},
+        {"name": "Mall of Side", "address": "Манавгат/Сиде (уточните точный адрес на карте)"},
+        {"name": "Базар Манавгата", "description": "Знаменитый четверговый рынок"}
+      ],
+      "attractions": [
+        {"name": "Храм Аполлона", "description": "Римские руины храма у моря, бесплатный вход, подсветка вечером"},
+        {"name": "Античный театр Сиде", "description": "Древний амфитеатр"},
+        {"name": "Античные улицы Сиде", "description": "Колоннады, агора, римские бани"},
+        {"name": "Водопад Манавгат", "description": "Природная достопримечательность рядом с городом"},
+        {"name": "Парк Land of Legends", "description": "Тематический парк в Кумкёй"}
+      ],
+      "transport": {
+        "public": "Долмуши связывают Сиде, Манавгат, Кумкёй, Эвренсеки, Чолаклы и далее Анталью. Сиде-Манавгат: 10-15 минут, каждые 5-10 минут. Оплата наличными водителю",
+        "card": null,
+        "apps": ["Moovit"],
+        "taxi_apps": ["BiTaksi", "Martı", "Uber (покрытие нестабильно)"]
+      }
+    },
+    {
+      "id": "alanya",
+      "name": "Аланья",
+      "name_en": "Alanya",
+      "emergency": {
+        "police_general": "+90 242 513 26 50",
+        "police_short": "112",
+        "police_note": "Туристический информационный центр Аланьи: +90 242 523 12 40",
+        "consulate": {
+          "name": "Ближайшее — Генеральное консульство РФ в Анталье",
+          "address": "~130 км от Аланьи. В отелях Аланьи часто есть русскоговорящий персонал",
+          "phone": "+90 242 248 32 02"
+        }
+      },
+      "hospitals": [
+        {"name": "Alanya Devlet Hastanesi (ALKÜ)", "type": "государственная, скорая 24ч", "address": "Oba Mahallesi, ALKÜ Hastane Cad. No:13, Alanya/Antalya", "phone": "+90 242 513 48 41"},
+        {"name": "Alanya Anadolu Hastanesi", "type": "частная, персонал говорит на немецком/английском/русском", "address": "Kadıpaşa Mah., Stad Cad. No:28/A, Alanya/Antalya", "phone": "+90 242 522 62 62"}
+      ],
+      "pharmacy_note": "Проверяйте дежурную аптеку на happ.health/duty-pharmacy/en/antalya/alanya",
+      "malls": [
+        {"name": "Alanyum (AlanyumPark)", "address": "Cumhuriyet, Keykubat Blv. No:219, 07400 Alanya/Antalya", "phone": "+90 242 515 11 34"},
+        {"name": "Mall of Alanya", "address": "Аланья (уточните точный адрес на карте)"},
+        {"name": "Базар старого города / ул. Damlataş", "description": "Традиционная торговая улица"}
+      ],
+      "attractions": [
+        {"name": "Замок Аланьи", "description": "Крепость XIII века, фуникулёр, панорамные виды"},
+        {"name": "Пляж Клеопатры", "description": "Один из самых известных пляжей региона"},
+        {"name": "Пещера Дамлаташ", "description": "Пещера возрастом 15 000 лет у подножья замка"},
+        {"name": "Красная башня (Kızıl Kule)", "description": "Восьмиугольная оборонительная башня XIII века, символ Аланьи"},
+        {"name": "Река Дим (Dim Çay)", "description": "Природная зона, лодочные прогулки"}
+      ],
+      "transport": {
+        "public": "Долмуши — основной транспорт, связывают пляжные районы, старый город и окрестности (включая Махмутлар). Связь с Антальей по трассе D400",
+        "card": null,
+        "apps": ["Moovit"],
+        "taxi_apps": ["BiTaksi", "Martı", "Uber (ограниченное покрытие)"]
+      }
+    }
+  ]
+}
